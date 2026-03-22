@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TDS 社团作品总览页，展示项目方向、团队信息、参赛记录与后续链接预留。">
+  <title>TDS 作品总览</title>
+  <link rel="icon" type="image/png" href="./Logo/TDS_LOGO_RED_PUBLIC.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="./index.html" aria-label="返回 TDS 首页">
+          <img src="./Logo/TDS_LOGO_RED_PUBLIC.png" alt="TDS 标志">
+          <div>
+            <div class="brand-mark">Thinking Different Studio</div>
+            <div class="brand-title">社团作品总览</div>
+          </div>
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="切换导航">
+          <span></span>
+        </button>
+        <nav class="nav-links" aria-label="作品页导航">
+          <a href="./index.html">返回主页</a>
+          <a href="./index.html#activities">社团活动</a>
+          <a href="./index.html#achievements">社团成绩</a>
+          <a class="active" href="./works.html">作品总览</a>
+          <a href="./index.html#join">加入我们</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main page-hero">
+      <section class="section">
+        <div class="container">
+          <div class="page-heading fade-in">
+            <span class="eyebrow">Works Archive</span>
+            <h1>从原型练习到完整展示，把每次创作都沉淀成可以讲述的作品。</h1>
+            <p>
+              这里展示的是更贴近社团实际输出方式的作品归档结构。当前先按 GameJam 与比赛两个大类做占位展示，
+              后续只需替换项目名称、图片、参赛信息和外链，就能快速扩展成完整作品库。
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="./index.html">返回首页</a>
+              <a class="ghost-button" href="./index.html#join">想加入一起做作品</a>
+            </div>
+          </div>
+          <div id="works-categories" data-works-root></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="./Logo/TDS_LOGO_RED_PUBLIC.png" alt="TDS 标志">
+          <span>© 2026 TDS · 社团作品总览</span>
+        </div>
+        <span>未来可继续扩展单作品详情页、外链跳转与筛选分类。</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

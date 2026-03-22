@@ -1,0 +1,268 @@
+{
+  "_note": "标准 JSON 不支持注释。为了兼容 GitHub Pages，这里用 _note 和 _template 字段代替顶部注释说明；当前结构支持 分类 -> 活动/比赛 -> 多个队伍作品。后续新增内容时请照着 categories -> events -> works 的对象结构填写。",
+  "_template": {
+    "categoryId": "gamejam-or-competition",
+    "categoryTitle": "分类名称",
+    "categoryDescription": "这一类作品的说明文字",
+    "event": {
+      "name": "活动或赛事名称",
+      "time": "时间",
+      "description": "该活动或赛事的整体说明",
+      "works": [
+        {
+          "name": "作品名称",
+          "team": "队伍名称",
+          "title": "作品标题说明",
+          "description": "作品简介",
+          "links": [
+            {
+              "label": "按钮文字",
+              "url": "",
+              "disabled": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "categories": [
+    {
+      "id": "gamejam",
+      "eyebrow": "GameJam",
+      "title": "GameJam 项目",
+      "description": "集中展示短周期高强度创作产出，适合体现团队配合、快速原型能力和即时创意表达。",
+      "events": [
+        {
+          "name": "GameJam 1",
+          "time": "2025 秋",
+          "description": "这是一个用于展示“同一场 GameJam 下有多个队伍作品”的占位活动块，你们后续可以直接在 works 里继续追加队伍作品。",
+          "works": [
+            {
+              "name": "GameJam 1 - 作品 A",
+              "team": "GameJam 小队 A",
+              "title": "用于展示短周期冲刺成果的占位项目",
+              "description": "这里可替换为你们实际的 GameJam 作品，适合填写玩法亮点、主题回应方式和团队分工。",
+              "links": [
+                {
+                  "label": "试玩链接待补",
+                  "url": "",
+                  "disabled": true
+                },
+                {
+                  "label": "GitHub 待补",
+                  "url": "",
+                  "disabled": true
+                }
+              ]
+            },
+            {
+              "name": "GameJam 1 - 作品 B",
+              "team": "GameJam 小队 B",
+              "title": "用于展示同一活动下第二支队伍作品的占位项目",
+              "description": "这里适合填写另一支队伍的主题理解、机制设计和最终展示形式，方便一个活动下并排展示多个成果。",
+              "links": [
+                {
+                  "label": "项目主页待补",
+                  "url": "",
+                  "disabled": true
+                },
+                {
+                  "label": "项目仓库待补",
+                  "url": "",
+                  "disabled": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GameJam 2",
+          "time": "2026 春",
+          "description": "适合记录校内主题 Jam、联合 Jam 或短期创作冲刺，每个活动下面可以挂多个队伍项目。",
+          "works": [
+            {
+              "name": "GameJam 2 - 作品 A",
+              "team": "GameJam 小队 C",
+              "title": "用于展示快速原型与玩法迭代的占位项目",
+              "description": "这里适合补充主题、核心机制、开发时长和最终展示形式，突出高密度协作的成果特征。",
+              "links": [
+                {
+                  "label": "项目主页待补",
+                  "url": "",
+                  "disabled": true
+                },
+                {
+                  "label": "项目仓库待补",
+                  "url": "",
+                  "disabled": true
+                }
+              ]
+            },
+            {
+              "name": "GameJam 2 - 作品 B",
+              "team": "GameJam 小队 D",
+              "title": "用于展示第二个队伍项目的占位卡片",
+              "description": "这里可替换成同一次 Jam 中另一支队伍的项目内容，用于集中展示同场活动的多样化产出。",
+              "links": [
+                {
+                  "label": "演示页面待补",
+                  "url": "",
+                  "disabled": true
+                },
+                {
+                  "label": "开发记录待补",
+                  "url": "",
+                  "disabled": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "GameJam 3",
+          "time": "2026 夏",
+          "description": "这个块适合后续继续追加更多 Jam 活动；如果某次活动只有一支队伍，也只保留一个 works 项即可。",
+          "works": [
+            {
+              "name": "GameJam 3 - 作品 A",
+              "team": "GameJam 小队 E",
+              "title": "用于展示跨方向临时组队创作的占位项目",
+              "description": "这里可替换成带有美术风格、叙事表达或特别主题限制的 Jam 作品说明。",
+              "links": [
+                {
+                  "label": "演示页面待补",
+                  "url": "",
+                  "disabled": true
+                },
+                {
+                  "label": "开发记录待补",
+                  "url": "",
+                  "disabled": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "competition",
+      "eyebrow": "Competition",
+      "title": "比赛项目",
+      "description": "集中展示面向正式赛事、评审与答辩准备的作品，适合体现完成度、表达能力和持续打磨过程。",
+      "events": [
+        {
+          "name": "比赛 1",
+          "time": "2025",
+          "description": "这是一个比赛分类下的占位赛事块，适合展示同一场比赛里不同队伍或不同作品的集中参赛情况。",
+          "works": [
+            {
+              "name": "比赛 1 - 作品 A",
+              "team": "比赛项目组 A",
+              "title": "用于展示比赛参赛项目的标准占位卡片",
+              "description": "这里适合填写项目目标、作品亮点、参赛类别以及最终成绩，方便后续统一维护展示。",
+              "links": [
+                {
+                  "label": "项目主页待补",
+                  "url": "",
+                  "disabled": true
+                },
+                {
+                  "label": "答辩材料待补",
+                  "url": "",
+                  "disabled": true
+                }
+              ]
+            },
+            {
+              "name": "比赛 1 - 作品 B",
+              "team": "比赛项目组 B",
+              "title": "用于展示同一比赛下第二个参赛项目的占位卡片",
+              "description": "这里可替换为另一支参赛队伍的项目内容，用于统一展示同届比赛的多个作品。",
+              "links": [
+                {
+                  "label": "试玩链接待补",
+                  "url": "",
+                  "disabled": true
+                },
+                {
+                  "label": "获奖信息待补",
+                  "url": "",
+                  "disabled": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "比赛 2",
+          "time": "2026",
+          "description": "适合记录更正式的省级、校际或专题竞赛，一个赛事块下同样支持多个作品同时展示。",
+          "works": [
+            {
+              "name": "比赛 2 - 作品 A",
+              "team": "比赛项目组 C",
+              "title": "用于展示偏完整度与表达力的参赛项目占位",
+              "description": "可以补充玩法、美术、技术实现和评委反馈，让比赛页面更有成果归档感。",
+              "links": [
+                {
+                  "label": "试玩链接待补",
+                  "url": "",
+                  "disabled": true
+                },
+                {
+                  "label": "项目仓库待补",
+                  "url": "",
+                  "disabled": true
+                }
+              ]
+            },
+            {
+              "name": "比赛 2 - 作品 B",
+              "team": "比赛项目组 D",
+              "title": "用于展示另一个比赛参赛作品的占位卡片",
+              "description": "这里可以放同届赛事中的另一件作品，便于在同一块里横向对比不同队伍成果。",
+              "links": [
+                {
+                  "label": "演示页面待补",
+                  "url": "",
+                  "disabled": true
+                },
+                {
+                  "label": "答辩材料待补",
+                  "url": "",
+                  "disabled": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "比赛 3",
+          "time": "2026",
+          "description": "如果某次比赛目前只有一个作品，也可以只保留一个 works 项，不影响页面结构。",
+          "works": [
+            {
+              "name": "比赛 3 - 作品 A",
+              "team": "比赛项目组 E",
+              "title": "用于展示长期打磨与多人协作成果的占位项目",
+              "description": "这里适合放更完整的参赛经历，包括制作周期、团队构成、最终展示与后续迭代计划。",
+              "links": [
+                {
+                  "label": "演示页面待补",
+                  "url": "",
+                  "disabled": true
+                },
+                {
+                  "label": "获奖信息待补",
+                  "url": "",
+                  "disabled": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
