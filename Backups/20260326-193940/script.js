@@ -43,7 +43,6 @@ let parallaxNodes = [];
 let parallaxRaf = 0;
 let sliderTimers = [];
 let parallaxScrollHandler = null;
-let isThemeTransitioning = false;
 
 if (body.classList.contains("home-page")) {
   const savedTheme = window.localStorage.getItem(themeStorageKey);
@@ -54,15 +53,11 @@ if (body.classList.contains("home-page")) {
 body.classList.toggle("reduced-motion", reducedMotion);
 
 if (themeToggle) {
-  themeToggle.addEventListener("click", async () => {
-    if (isThemeTransitioning) {
-      return;
-    }
+  themeToggle.addEventListener("click", () => {
     const nextTheme = body.getAttribute("data-theme") === "dark" ? "light" : "dark";
-    isThemeTransitioning = true;
-    await triggerThemeTransition(nextTheme);
+    triggerThemeTransition(nextTheme);
+    body.setAttribute("data-theme", nextTheme);
     window.localStorage.setItem(themeStorageKey, nextTheme);
-    isThemeTransitioning = false;
   });
 }
 
@@ -392,11 +387,6 @@ function initSliders() {
 
     const showSlide = (index) => {
       current = (index + slides.length) % slides.length;
-      slider.classList.remove("slider-signal-pulse");
-      void slider.offsetWidth;
-      if (!reducedMotion) {
-        slider.classList.add("slider-signal-pulse");
-      }
       slides.forEach((slide, slideIndex) => {
         const isActive = slideIndex === current;
         slide.classList.toggle("active", isActive);
@@ -474,23 +464,16 @@ function hydrateDynamicContent(root) {
 
 function triggerThemeTransition(nextTheme) {
   if (reducedMotion || !motionRoot) {
-    body.setAttribute("data-theme", nextTheme);
     return;
   }
 
-  const shiftClass = nextTheme === "dark" ? "theme-shift-dark" : "theme-shift-light";
   body.classList.remove("theme-shift-light", "theme-shift-dark", "theme-shifting");
   void body.offsetWidth;
-  body.classList.add("theme-shifting", shiftClass);
+  body.classList.add("theme-shifting", nextTheme === "dark" ? "theme-shift-dark" : "theme-shift-light");
 
-  return new Promise((resolve) => {
-    body.setAttribute("data-theme", nextTheme);
-
-    window.setTimeout(() => {
-      body.classList.remove("theme-shifting", "theme-shift-light", "theme-shift-dark");
-      resolve();
-    }, 520);
-  });
+  window.setTimeout(() => {
+    body.classList.remove("theme-shifting", "theme-shift-light", "theme-shift-dark");
+  }, 820);
 }
 
 function renderEventBlock(event) {
