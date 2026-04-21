@@ -2494,7 +2494,6 @@ body.home-page[data-theme="dark"] .work-link.disabled {
   gap: 30px;
   margin-bottom: 25px;
   overflow-x: auto;
-  padding-bottom: 15px; 
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; 
 }
@@ -2724,6 +2723,10 @@ body.home-page[data-theme="dark"][data-motion-root] {
 .home-page .button:hover,
 .home-page .ghost-button:hover {
   transform: translate3d(0, -8px, 0) scale(1.012);
+}
+
+.home-page .group-nav-tabs .group-tab:hover {
+  transform: none;
 }
 
 .home-page .button,
