@@ -1369,14 +1369,12 @@ body.home-page[data-theme="dark"] .theme-label-dark {
   transform: rotate(140deg);
 }
 
-.hero-illustration-placeholder {
+.hero-mascot {
   min-height: 272px;
-  border: 3px dashed rgba(242, 93, 93, 0.16);
-  background: rgba(255, 255, 255, 0.001);
-}
-
-body.home-page[data-theme="dark"] .hero-illustration-placeholder {
-  border-color: rgba(67, 213, 235, 0.12);
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .right-art {
@@ -2285,7 +2283,7 @@ body.home-page[data-theme="dark"] .ornament-bar {
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-illustration-placeholder {
+  .hero-mascot {
     grid-column: span 2;
     order: -1;
   }
@@ -2343,7 +2341,7 @@ body.home-page[data-theme="dark"] .ornament-bar {
     grid-template-columns: 1fr;
   }
 
-  .hero-illustration-placeholder {
+  .hero-mascot {
     grid-column: auto;
     order: 0;
   }
@@ -2420,7 +2418,7 @@ body.home-page[data-theme="dark"] .ornament-bar {
   }
 
   .hero-art,
-  .hero-illustration-placeholder {
+  .hero-mascot {
     min-height: 180px;
   }
 
@@ -2595,7 +2593,7 @@ body.home-page[data-theme="dark"][data-motion-root] {
 .ornament,
 .ambient-particle,
 .hero-art,
-.hero-illustration-placeholder,
+.hero-mascot,
 .hero-artboard,
 .monitor-screen,
 .page-heading,
@@ -3310,24 +3308,11 @@ body.theme-shift-light .ambient-ornaments::before {
     inset 0 0 42px rgba(255, 255, 255, 0.08);
 }
 
-.hero-artboard[data-hud-panel] .hero-illustration-placeholder {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03)),
-    radial-gradient(circle at center, rgba(255, 255, 255, 0.14), transparent 62%);
-  border-style: dashed;
+.hero-artboard[data-hud-panel] .hero-mascot {
+  border-radius: 8px;
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.14),
     0 0 40px rgba(255, 255, 255, 0.06);
-}
-
-.hero-artboard[data-hud-panel] .hero-illustration-placeholder::before {
-  content: "HUD LINK";
-  position: absolute;
-  top: 14px;
-  left: 16px;
-  font-size: 0.72rem;
-  letter-spacing: 0.24em;
-  color: var(--hud-line-strong);
 }
 
 .monitor-screen[data-hud-panel] {
