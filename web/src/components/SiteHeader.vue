@@ -32,7 +32,7 @@ onUnmounted(() => {
       <div class="container web-nav-bar nav-bar">
         <!-- Left: back + brand -->
         <div style="display:flex;align-items:center;gap:16px;">
-          <a class="back-main" href="/index.html" title="返回 TDS 主站" @click="closeMenu">
+          <a class="back-main" href="../../index.html" title="返回 TDS 主站" @click="closeMenu">
             &larr; 主站
           </a>
           <RouterLink to="/" class="brand" @click="closeMenu">
@@ -54,7 +54,7 @@ onUnmounted(() => {
           >
             {{ item.label }}
           </RouterLink>
-          <a href="/index.html" class="nav-cta" @click="closeMenu">主站</a>
+          <a href="../../index.html" class="nav-cta" @click="closeMenu">主站</a>
         </nav>
 
         <!-- Right: theme toggle + hamburger -->

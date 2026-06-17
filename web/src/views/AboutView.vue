@@ -122,7 +122,7 @@ const timeline = [
         </div>
 
         <div class="fade-in" data-reveal="rise" data-reveal-delay="4" style="margin-top:32px;">
-          <a href="/index.html#join" class="button">查看 TDS 招新详情</a>
+          <a href="../../index.html#join" class="button">查看 TDS 招新详情</a>
         </div>
       </div>
     </section>

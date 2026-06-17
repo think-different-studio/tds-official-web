@@ -95,7 +95,7 @@ useReveal(mainRef)
     <section class="section" style="border-top:1px solid var(--line);padding-top:32px;">
       <div class="container">
         <div class="fade-in" data-reveal="rise" style="text-align:center;">
-          <a href="/index.html" class="button">&larr; 前往 TDS 主站</a>
+          <a href="../../index.html" class="button">&larr; 前往 TDS 主站</a>
         </div>
       </div>
     </section>

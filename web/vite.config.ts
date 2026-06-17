@@ -6,6 +6,9 @@ import vue from '@vitejs/plugin-vue'
 // 主站根目录
 const rootDir = resolve(__dirname, '..')
 
+// 开发模式用 /web/，生产用 ./（相对路径，适配 GitHub Pages）
+const BASE = process.env.NODE_ENV === 'production' ? './' : '/web/'
+
 const MIME_MAP: Record<string, string> = {
   '.html': 'text/html; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
@@ -67,7 +70,7 @@ function serveRootStatic() {
 
 export default defineConfig({
   plugins: [vue(), serveRootStatic()],
-  base: '/web/',
+  base: BASE,
   server: {
     port: 5173,
     open: true,

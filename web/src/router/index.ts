@@ -1,7 +1,13 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
+
+const isProd = import.meta.env.PROD
 
 const router = createRouter({
-  history: createWebHistory('/web/'),
+  // 生产环境（GitHub Pages）使用 hash 路由，避免路径前缀问题
+  // 开发环境使用 history 路由，保持 URL 美观
+  history: isProd
+    ? createWebHashHistory()
+    : createWebHistory('/web/'),
   routes: [
     {
       path: '/',
