@@ -1,0 +1,65 @@
+{
+  "works": [
+    {
+      "name": "校园二手交易平台",
+      "author": "张三",
+      "title": "全栈项目 · 2025",
+      "description": "基于 Vue 3 + Express + MySQL 的校园二手交易平台，支持商品发布、搜索、聊天和订单管理。",
+      "tags": ["Vue 3", "Express", "MySQL", "WebSocket"],
+      "links": [
+        { "label": "查看源码", "url": "#" },
+        { "label": "在线预览", "url": "#" }
+      ]
+    },
+    {
+      "name": "TDS 社团官网",
+      "author": "Web 组全体",
+      "title": "团队项目 · 2025",
+      "description": "社团官方网站，纯静态 HTML/CSS/JS 实现，包含社团介绍、作品展示、分组详情等完整内容。",
+      "tags": ["HTML", "CSS", "JavaScript", "响应式"],
+      "links": [
+        { "label": "查看源码", "url": "#" }
+      ]
+    },
+    {
+      "name": "像素风天气组件",
+      "author": "李四",
+      "title": "前端练习 · 2025",
+      "description": "像素风格的天气展示组件，根据天气状况动态切换像素动画和背景音效。",
+      "tags": ["React", "CSS Animation", "Canvas"],
+      "links": [
+        { "label": "在线预览", "url": "#" }
+      ]
+    },
+    {
+      "name": "Markdown 协作编辑器",
+      "author": "王五",
+      "title": "全栈项目 · 2024",
+      "description": "支持实时协作的 Markdown 编辑器，基于 Yjs CRDT 算法实现多人同步编辑。",
+      "tags": ["Vue 3", "Yjs", "WebSocket", "CodeMirror"],
+      "links": [
+        { "label": "查看源码", "url": "#" }
+      ]
+    },
+    {
+      "name": "3D 产品展示页",
+      "author": "赵六",
+      "title": "前端项目 · 2024",
+      "description": "使用 Three.js 构建的交互式 3D 产品展示页面，支持模型旋转、材质切换和动画过渡。",
+      "tags": ["Three.js", "GSAP", "WebGL"],
+      "links": [
+        { "label": "在线预览", "url": "#" }
+      ]
+    },
+    {
+      "name": "社团活动签到系统",
+      "author": "孙七",
+      "title": "全栈项目 · 2024",
+      "description": "微信小程序 + 云开发的社团活动签到系统，支持扫码签到、请假审批和数据统计。",
+      "tags": ["微信小程序", "云开发", "ECharts"],
+      "links": [
+        { "label": "查看源码", "url": "#" }
+      ]
+    }
+  ]
+}

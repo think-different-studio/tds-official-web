@@ -1,0 +1,36 @@
+{
+  "blogs": [
+    {
+      "slug": "vue3-composition-api-intro",
+      "title": "Vue 3 Composition API 入门指南",
+      "date": "2025-05-20",
+      "summary": "从 Options API 迁移到 Composition API 的完整指南，包括 setup、ref、reactive、computed 等核心概念的实战用法。",
+      "tags": ["Vue 3", "Composition API", "入门"],
+      "content": "## 为什么使用 Composition API？\n\nVue 3 的 Composition API 提供了更灵活的代码组织方式，特别适合大型项目和逻辑复用场景。\n\n### setup 函数\n\n`setup()` 是 Composition API 的入口点，在组件创建之前执行。它替代了 Options API 中的 `data`、`methods`、`computed` 等选项。\n\n### 响应式基础\n\n使用 `ref()` 创建基本类型的响应式数据，使用 `reactive()` 创建对象类型的响应式数据。\n\n### 组合式函数 (Composables)\n\n将可复用的逻辑抽取为独立函数，以 `use` 前缀命名，实现跨组件共享。"
+    },
+    {
+      "slug": "typescript-strict-mode",
+      "title": "TypeScript 严格模式下的类型体操实战",
+      "date": "2025-05-10",
+      "summary": "深入理解 TypeScript 的类型系统，通过实际案例学习泛型约束、条件类型、模板字面量类型等进阶技巧。",
+      "tags": ["TypeScript", "类型体操", "进阶"],
+      "content": "## 严格模式全开\n\n在 `tsconfig.json` 中开启 `strict: true` 后，TypeScript 会启用所有严格检查选项，帮助我们写出更安全的代码。\n\n### 泛型约束\n\n使用 `extends` 关键字约束泛型参数的范围，确保类型安全的同时保持灵活性。\n\n### 条件类型\n\n条件类型根据条件表达式选择类型，配合 `infer` 关键字可以提取嵌套类型信息。\n\n### 实用技巧\n\n掌握 `Partial`、`Required`、`Pick`、`Omit` 等内置工具类型，以及自定义工具类型的编写方法。"
+    },
+    {
+      "slug": "vite-plugin-development",
+      "title": "从零开发 Vite 插件：给项目添加自动路由生成",
+      "date": "2025-04-28",
+      "summary": "手把手教你开发一个 Vite 插件，实现根据文件系统自动生成 Vue Router 路由配置。",
+      "tags": ["Vite", "插件开发", "Vue Router"],
+      "content": "## Vite 插件机制\n\nVite 插件基于 Rollup 插件接口扩展而来，理解其生命周期钩子是开发插件的基础。\n\n### 核心钩子\n\n- `config`: 修改 Vite 配置\n- `configResolved`: 获取最终配置\n- `transformIndexHtml`: 转换 HTML\n- `transform`: 转换模块代码\n\n### 实现思路\n\n1. 扫描 `src/views/` 目录下的 `.vue` 文件\n2. 根据文件路径生成路由配置\n3. 在虚拟模块中导出路由数组"
+    },
+    {
+      "slug": "css-container-queries",
+      "title": "CSS Container Queries 实战：真正的组件级响应式",
+      "date": "2025-04-15",
+      "summary": "告别 Media Queries 的全局思维，用 Container Queries 让每个组件独立响应自身容器尺寸变化。",
+      "tags": ["CSS", "响应式", "Container Queries"],
+      "content": "## 什么是 Container Queries？\n\nContainer Queries 允许组件根据其父容器的尺寸来调整样式，而非视口尺寸。\n\n### 基本用法\n\n使用 `container-type: inline-size` 声明容器，然后用 `@container` 规则编写条件样式。\n\n### 与 Media Queries 的区别\n\nMedia Queries 基于视口，Container Queries 基于组件容器。这使得组件可以在不同布局中自适应，无需知道自身被放在哪里。"
+    }
+  ]
+}
